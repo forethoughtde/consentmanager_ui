@@ -1,11 +1,11 @@
 import React from 'react';
 import './Logo.css';
-import Link from '@material-ui/core/Link';
+import { Router, Link } from "@reach/router"
 
 function Logo(){
     return (
         <h2>
-            <Link color="inherit" href="/" className='cm_link' underline="none">
+            <Link color="inherit" to="/" className='cm_link' underline="none">
                 Consent Manager
             </Link>
         </h2>
