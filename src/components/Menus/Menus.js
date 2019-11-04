@@ -8,15 +8,17 @@ import MenuIcon from '@material-ui/icons/Menu';
 import MenuSharpIcon from '@material-ui/icons/MenuSharp';
 
 function Menus(){
+    const [anchorEl, setAnchorEl] = React.useState(null);
     return (
         <div className="cm_menu_links_container">
             <div className="cm_menu_items_mobile">
-                <Button aria-controls="simple-menu" aria-haspopup="true">
-                    <MenuSharpIcon color="secondary"/>
+                <Button aria-controls="simple-menu" aria-haspopup="true" href="#">
+                    <MenuSharpIcon htmlColor="#ffffff"/>
                 </Button>
                 <Menu
                     id="simple-menu"
                     keepMounted
+                    open={Boolean(anchorEl)}
                 >
                     <MenuItem>Profile</MenuItem>
                     <MenuItem>My account</MenuItem>
