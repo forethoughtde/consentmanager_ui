@@ -4,7 +4,6 @@ import Link from '@material-ui/core/Link';
 import Menu from '@material-ui/core/Menu';
 import Button from '@material-ui/core/Button';
 import MenuItem from '@material-ui/core/MenuItem';
-import MenuIcon from '@material-ui/icons/Menu';
 import MenuSharpIcon from '@material-ui/icons/MenuSharp';
 
 function Menus(){
@@ -20,9 +19,9 @@ function Menus(){
                     keepMounted
                     open={Boolean(anchorEl)}
                 >
-                    <MenuItem>Profile</MenuItem>
-                    <MenuItem>My account</MenuItem>
-                    <MenuItem>Logout</MenuItem>
+                    <MenuItem>About</MenuItem>
+                    <MenuItem>Contact</MenuItem>
+                    <MenuItem>Legal Information</MenuItem>
                 </Menu>
             </div>
             <div className="cm_menu_items_desktop">
