@@ -1,0 +1,26 @@
+.cm_menu_links_container{
+	display: flex;
+	align-items: center;
+}
+
+.cm_menu_links_container .secondary{
+	color: #ffffff;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+@media screen and (min-width: 768px){
+	.cm_menu_items_mobile{
+		display: none;
+	}
+}
+
+.cm_menu_items_desktop{
+	display: none;
+}
+
+@media screen and (min-width: 768px){
+	.cm_menu_items_desktop{
+		display: block;
+	}
+}

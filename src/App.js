@@ -1,18 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Button from '@material-ui/core/Button';
+import Container from '@material-ui/core/Container';
 
 function App(){
     return (
         <div className="App">
-           <AppBar position="fixed" color="primary">
-               <Toolbar variant="regular">
-
-               </Toolbar>
-           </AppBar>
+            <Container fixed>
+                <AppBar position="fixed" color="primary">
+                    <Toolbar variant="regular">
+                        <Header/>
+                    </Toolbar>
+                </AppBar>
+            </Container>
         </div>
     );
 }
